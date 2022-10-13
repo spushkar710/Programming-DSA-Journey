@@ -19,9 +19,9 @@ using namespace std;
 class Solution {
   public:
     void printSquare(int n) {
-        for(int i=0;i<n;i++)
+        for(int row=0;row<n;row++)
         {
-            for(int j=0;j<n;j++)
+            for(int col=0;col<n;col++)
             {
                 cout<<"*"<<" ";
                 
