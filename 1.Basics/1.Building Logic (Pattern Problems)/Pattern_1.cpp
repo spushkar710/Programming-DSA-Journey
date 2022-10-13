@@ -15,10 +15,11 @@ using namespace std;
 
 // } Driver Code Ends
 
-//Main Function
+
 class Solution {
   public:
-    void printSquare(int n) {
+    void printSquare(int n)          //The Function to print the pattern
+    {
         for(int row=0;row<n;row++)
         {
             for(int col=0;col<n;col++)

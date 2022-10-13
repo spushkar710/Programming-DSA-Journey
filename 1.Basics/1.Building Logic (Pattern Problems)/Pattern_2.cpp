@@ -16,8 +16,9 @@ using namespace std;
 // } Driver Code Ends
 class Solution {
   public:
-    void printTriangle(int n) {
-        
+    void printTriangle(int n)        //The Function to print the pattern
+    {
+
         for(int row=0;row<n;row++)
         {
             for(int col=0;col<=row;col++)
@@ -31,7 +32,6 @@ class Solution {
 
 //{ Driver Code Starts.
 
-//Main Function
 int main() {
     int t;
     cin >> t;
