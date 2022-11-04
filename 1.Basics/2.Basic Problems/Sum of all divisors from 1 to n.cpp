@@ -7,7 +7,7 @@ using namespace std;
 class Solution
 {
 public:
-    long long sumOfDivisors(int N)
+    long long sumOfDivisors(int N)         //The Function
     {   
         long long sum = 0;
         
@@ -15,6 +15,10 @@ public:
         { 
             
             sum += (N/i)*i;
+        }
+        
+        return sum;
+    }
 /*
 Let n = 6,
 => F(1) + F(2) + F(3) + F(4) + F(5) + F(6)
@@ -32,10 +36,6 @@ less than or equal to n. Thus, we just need to find the count of multiples and t
 full contribution in the final sum. It can easily be done in O(1) time by taking the floor of (n / i) and 
 then multiply it with i for the sum. 
  */       
-        }
-        
-        return sum;
-    }
 };
 
 //{ Driver Code Starts.
