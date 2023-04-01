@@ -16,6 +16,8 @@ array by 2 will make the output array .
 using namespace std;
 
 // } Driver Code Ends
+
+//#################################################### THE REQUIRED FUNCTION ############################################################
 class Solution{
 	
 	
@@ -52,6 +54,13 @@ class Solution{
         arr[i] = temp[i - (n - k)];
     
     }
+
+    * Time Complexity: O(d)+O(n-d)+O(d) = O(n+d), 
+      where n = size of the array, d = the number of rotations. 
+      Each term represents each loop used in the code.
+    
+    * Space Complexity: O(d) extra space as we are using a temporary array of size d.
+    
     */
        
     //OPTIMISED APPROACH:
@@ -61,11 +70,21 @@ class Solution{
 	   reverse(arr, arr+k);    //reversing the array from 0 to k-1
 	   reverse(arr+k, arr+n);  //reversing the array from k to n-1
 	   reverse(arr, arr+n);    //reversing the array from 0 to n-1
+
+
+    /**
+     * Time Complexity: O(d)+O(n-d)+O(n) = O(2*n),
+       where n = size of the array, d = the number of rotations. Each term corresponds to each reversal step.
+
+     * Space Complexity: O(1) since no extra space is required.
+
+     */   
 	} 
 		 
 
 };
 
+//########################################################################################################################################
 //{ Driver Code Starts.
 
 int main() 
