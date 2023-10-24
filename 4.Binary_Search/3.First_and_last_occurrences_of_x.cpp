@@ -43,6 +43,7 @@ class Solution
     }
     v.push_back(res); //Puting the first occurence in the vector
     
+
     // Finding the last Occurence
     low= 0;
     high= n-1;
@@ -68,6 +69,7 @@ class Solution
 
     }
 };
+
 //####################################################################################################################################
 
 //{ Driver Code Starts.
